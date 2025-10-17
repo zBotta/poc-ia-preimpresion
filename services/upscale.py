@@ -17,7 +17,7 @@ UPSCALE_MODELS = {
         }
     },
     "Topaz Labs": {
-        "model": "topazlabs/image-upscale:latest",
+        "model": "topazlabs/image-upscale",
         "input_params": lambda image_data, scale: {
             "image": f"data:image/png;base64,{base64.b64encode(image_data).decode()}",
             "scale": scale
